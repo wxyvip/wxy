@@ -1,0 +1,329 @@
+@charset "UTF-8";
+/* line 2, style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 10, style.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/* line 15, style.scss */
+#container {
+  width: 100%;
+  height: 100%;
+  background: url(../img/background.png) no-repeat;
+  background-size: 100% 100%;
+  border-top: solid 5px #0b8ee4;
+  position: relative; }
+
+/*头部样式*/
+/* line 25, style.scss */
+.nav-top {
+  width: 100%;
+  height: 40px;
+  border-top: solid 5px #04c2f9; }
+
+/* line 30, style.scss */
+.nav-top .nav-list {
+  width: 90%;
+  height: 40px;
+  margin-left: 5%;
+  position: absolute;
+  top: 0px; }
+
+/* line 37, style.scss */
+.nav-top .nav-list li {
+  display: block;
+  color: #fff;
+  float: left;
+  width: 100px;
+  height: 40px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 20px;
+  background: url(../img/nav-top.png) no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer; }
+
+/* line 51, style.scss */
+.nav-list li.on {
+  background: url(../img/nav-checked.png) no-repeat;
+  background-size: 100% 100%; }
+
+/*导航按钮*/
+/* line 58, style.scss */
+.nav-btn {
+  width: 100%;
+  height: 70px;
+  cursor: pointer; }
+  /* line 62, style.scss */
+  .nav-btn p {
+    color: #fff;
+    line-height: 70px;
+    position: absolute;
+    top: 82px;
+    left: 53px;
+    z-index: 9; }
+  /* line 70, style.scss */
+  .nav-btn .btn-bg {
+    width: 75px;
+    position: absolute;
+    top: 80px;
+    left: 30px; }
+  /* line 76, style.scss */
+  .nav-btn .btn-big {
+    width: 67px;
+    position: absolute;
+    top: 84px;
+    left: 33px;
+    -webkit-animation: rotate 3s linear infinite; }
+  /* line 83, style.scss */
+  .nav-btn .btn-small {
+    width: 58px;
+    position: absolute;
+    top: 90px;
+    left: 38px;
+    -webkit-animation: rotate 3s linear infinite reverse; }
+
+/*旋转动画*/
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+/*中间部分*/
+/* line 100, style.scss */
+.content {
+  width: 100%;
+  height: 65%;
+  background: url(../img/map.png) no-repeat 50%;
+  background-size: contain;
+  position: relative; }
+
+/* line 107, style.scss */
+.left-box {
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  left: 100px;
+  background: url(../img/left.png) no-repeat;
+  background-size: 100% 100%;
+  display: none; }
+
+/* line 116, style.scss */
+.left-box p {
+  color: #2e342c;
+  font-weight: bold;
+  line-height: 40px;
+  margin-left: 45px; }
+
+/* line 122, style.scss */
+.left-box select {
+  width: 70%;
+  height: 30px;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  position: absolute;
+  top: 13%;
+  left: 15%;
+  background: url(../img/selectbox.png) no-repeat;
+  background-size: 100% 100%; }
+
+/* line 135, style.scss */
+.left-box div {
+  width: 230px;
+  color: #fff;
+  position: absolute;
+  left: 20%;
+  top: 25%; }
+  /* line 141, style.scss */
+  .left-box div h2 {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+    background: url(../img/titbg.png) no-repeat;
+    background-size: 100% 100%; }
+    /* line 148, style.scss */
+    .left-box div h2 .box-k {
+      float: right;
+      margin-top: 9px;
+      margin-right: 10px; }
+
+/* line 155, style.scss */
+.left-box ul {
+  display: none;
+  color: #fff; }
+  /* line 158, style.scss */
+  .left-box ul li {
+    width: 99%;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+    text-indent: 10px;
+    background: url(../img/listbg.png) no-repeat;
+    background-size: 100% 100%; }
+
+/* line 168, style.scss */
+.right-box {
+  width: 250px;
+  height: 450px;
+  position: absolute;
+  right: 0;
+  background: url(../img/right.png) no-repeat;
+  background-size: 100% 100%; }
+  /* line 175, style.scss */
+  .right-box ul li {
+    color: #fff;
+    float: left;
+    line-height: 45px;
+    margin-left: 50px;
+    margin-right: 10px; }
+  /* line 182, style.scss */
+  .right-box .disable {
+    color: #002938; }
+  /* line 185, style.scss */
+  .right-box p {
+    color: #fff;
+    font-size: 12px;
+    margin-left: 25px; }
+  /* line 190, style.scss */
+  .right-box h1 {
+    color: #fff;
+    margin-left: 25px; }
+
+/* line 195, style.scss */
+.alert-box {
+  width: 400px;
+  height: 200px;
+  background: url(../img/alertbox.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 40%;
+  top: 20%; }
+  /* line 203, style.scss */
+  .alert-box .tit {
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    top: 15px; }
+  /* line 210, style.scss */
+  .alert-box form {
+    width: 100%;
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    color: #fff; }
+    /* line 216, style.scss */
+    .alert-box form p {
+      line-height: 35px; }
+    /* line 219, style.scss */
+    .alert-box form .yes {
+      width: 14px;
+      display: inline-block;
+      opacity: 0; }
+    /* line 224, style.scss */
+    .alert-box form .no {
+      width: 14px;
+      display: inline-block;
+      opacity: 0; }
+    /* line 229, style.scss */
+    .alert-box form .yesl {
+      background: url(../img/yes.png) no-repeat;
+      background-size: contain;
+      background-position: -15px 0; }
+    /* line 234, style.scss */
+    .alert-box form .nol {
+      background: url(../img/no.png) no-repeat;
+      background-size: contain;
+      background-position: -15px 0; }
+  /* line 240, style.scss */
+  .alert-box .con {
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    border: none;
+    outline: none;
+    background: url(../img/alert-btn.png) no-repeat;
+    background-size: 100% 100%; }
+  /* line 253, style.scss */
+  .alert-box .cancel {
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 40px;
+    left: 250px;
+    border: none;
+    outline: none;
+    background: url(../img/alert-btn.png) no-repeat;
+    background-size: 100% 100%; }
+
+/*buttom样式*/
+/* line 270, style.scss */
+.bottom {
+  width: 70%;
+  height: 180px;
+  margin-left: 15%;
+  position: relative;
+  cursor: pointer; }
+
+/* line 277, style.scss */
+.bottom-list li {
+  display: block;
+  float: left;
+  margin-right: 20px; }
+  /* line 281, style.scss */
+  .bottom-list li img {
+    width: 50px; }
+
+/* line 285, style.scss */
+.bottom-listbtn {
+  width: 100%;
+  height: 70px; }
+  /* line 288, style.scss */
+  .bottom-listbtn p {
+    color: #fff;
+    position: absolute;
+    right: 40px;
+    z-index: 9; }
+  /* line 294, style.scss */
+  .bottom-listbtn .bottom-bg {
+    width: 130px;
+    position: absolute;
+    top: -45px; }
+  /* line 299, style.scss */
+  .bottom-listbtn .bottom-big {
+    width: 125px;
+    position: absolute;
+    top: -41px;
+    -webkit-animation: rotate 4s linear infinite; }
+  /* line 305, style.scss */
+  .bottom-listbtn .bottom-small {
+    width: 110px;
+    position: absolute;
+    top: -32px;
+    right: -3px;
+    -webkit-animation: rotate 4s linear infinite reverse; }
+  /* line 312, style.scss */
+  .bottom-listbtn .bottom-smallpic {
+    width: 90px;
+    position: absolute;
+    top: -23px;
+    right: 7px;
+    -webkit-animation: rotate 4s linear infinite; }
+
+/*# sourceMappingURL=style.css.map */
